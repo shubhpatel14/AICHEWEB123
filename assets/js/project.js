@@ -99,7 +99,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Zankhan Talajiya,<br> Socail Media Head",
+    title: "Vraj Shah,<br> Socail Media Head",
     cardImage: "assets/images/project-page/zankhan.jpg",
     description: "Built using Python.",
     tagimg:
