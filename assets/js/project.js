@@ -65,7 +65,7 @@ const projects = [
   },
   {
     title: "Tirth Patel,<br> Web Head",
-    cardImage: "assets/images/project-page/tirth.jpg",
+    cardImage: "assets/images/project-page/tirth2.png",
     description: "Personal book library app built using JavaScript.",
     Previewlink: "",
     Githublink: "",
