@@ -14,7 +14,7 @@ const research = [
     image: "assets/images/research-page/Atomicbingo.png",
     citation: {
       vancouver:
-        "",
+        "Winners:  Bingo trio<br>Risheeka Soni (C) <br> Trupal Panchal<br> Vedanshi Jatinkumar Dixit <br> <br> Runners Up: Matadors<br>Meet Mukeshkumar Patel(C)<br>Harry Vijaykumar Patel<br>Swayam Kalpesh Taware",
     },
     // abstract:
     //   "This is currently left empty and this can be considered as a dummy data 1",
@@ -164,7 +164,7 @@ const fillData = () => {
       let buttonDisabled = "";
       let buttonStyles = ""; // Add style variable for button width and padding
       
-      if (citebox === "popup1") {
+      if (citebox === "") {
         buttonText = "Results will be declared soon"; // Change button text
         buttonDisabled = "disabled"; // Disable the button
         buttonStyles = "style='width: 250px; padding: 10px; text-align: center;'"; // Make button wider and increase padding
