@@ -127,8 +127,7 @@
         background-image: url(../images/designs/Green\ Thumbs\ Graphics.jpg);
     }
     .item1 div.picture-container:nth-child(8) {
-        background-image: url(../images/designs/Green\ screen\ presentation.jpg);
-
+            background-image: url(../images/designs/Green\ screen\ presentation.jpg);
     }
 
     .item2 div.picture-container:nth-child(1) {
