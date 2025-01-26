@@ -6,6 +6,14 @@ const projectcards = document.querySelector(".projectcards");
 // Array of object for projects
 const projects = [
   {
+    title: "Sanjukta Bose Goswami,<br>Faculty Mentor",
+    cardImage: "assets/images/project-page/sbg.png",
+    description: "A quiz app built using basic react.",
+    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
     title: "Sholk Panchal,<br>President",
     cardImage: "assets/images/project-page/sholk.jpg",
     description: "A quiz app built using basic react.",
@@ -15,7 +23,7 @@ const projects = [
   },
   {
     title: "Niyati Raulji,<br>Vice President",
-    cardImage: "assets/images/project-page/chess.jpg",
+    cardImage: "assets/images/project-page/niyati.jpg",
     description: "A chess engine for a popular game dev engine.",
     tagimg: "https://image.flaticon.com/icons/png/512/643/643350.png",
     Previewlink: "",
@@ -23,7 +31,7 @@ const projects = [
   },
   {
     title: "Rutvi Patel,<br>Secretary",
-    cardImage: "assets/images/project-page/flappybird.jpg",
+    cardImage: "assets/images/project-page/rutvi.jpg",
     description: "Flappy bird game built using React.js",
     tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
     Previewlink: "",
@@ -31,7 +39,7 @@ const projects = [
   },
   {
     title: "Nachiket Haldankar,<br>Joint Secretary",
-    cardImage: "assets/images/project-page/quiz.jpg",
+    cardImage: "assets/images/project-page/nachiket.jpg",
     description: "Exercise tracker built using basic redux.",
     tagimg: "https://miro.medium.com/max/2800/0*U2DmhXYumRyXH6X1.png",
     Previewlink: "",
@@ -48,7 +56,7 @@ const projects = [
   },
   {
     title: "Ved Prajapati,<br>Joint Treasurer",
-    cardImage: "assets/images/project-page/poker2.jpg",
+    cardImage: "assets/images/project-page/ved.jpg",
     description: "Poker game built using typescript.",
     tagimg: "https://miro.medium.com/max/816/1*mn6bOs7s6Qbao15PMNRyOA.png",
     Previewlink: "",
@@ -65,7 +73,7 @@ const projects = [
   },
   {
     title: "Tirth Patel,<br> Web Head",
-    cardImage: "assets/images/project-page/tirth2.png",
+    cardImage: "assets/images/project-page/tirth.jpg",
     description: "Personal book library app built using JavaScript.",
     Previewlink: "",
     Githublink: "",
@@ -90,8 +98,8 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Vishal Yadav,<br> K12 Head",
-    cardImage: "assets/images/project-page/vishal.jpg",
+    title: "Arman Syed,<br> K12 Head",
+    cardImage: "assets/images/project-page/arman.jpg",
     description: "Built using Tensorflow.",
     tagimg:
       "https://cdn-images-1.medium.com/max/1200/1*iDQvKoz7gGHc6YXqvqWWZQ.png",
@@ -100,7 +108,7 @@ const projects = [
   },
   {
     title: "Vraj Shah,<br> Socail Media Head",
-    cardImage: "assets/images/project-page/vrajshah.png",
+    cardImage: "assets/images/project-page/vraj.jpg",
     description: "Built using Python.",
     tagimg:
       "https://camo.githubusercontent.com/888e388801f947dec7c3d843942c277af25fe2b1aed1821542c4e711f210312a/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f37363870782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67",
@@ -108,8 +116,8 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Mohammed Lakshmidhar,<br> PR Head",
-    cardImage: "assets/images/project-page/mohammad.jpg",
+    title: "Meet Patel,<br> PR Head",
+    cardImage: "assets/images/project-page/marketing.jpg",
     description: "Built using Python.",
     tagimg:
       "https://camo.githubusercontent.com/888e388801f947dec7c3d843942c277af25fe2b1aed1821542c4e711f210312a/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f37363870782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67",
@@ -126,8 +134,8 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Nidhi Patel,<br> Creative Head",
-    cardImage: "assets/images/project-page/nidhi.jpg",
+    title: "Yug Gajjar,<br> Creative Head",
+    cardImage: "assets/images/project-page/yug.jpg",
     description: "Built using Python.",
     tagimg:
       "https://camo.githubusercontent.com/888e388801f947dec7c3d843942c277af25fe2b1aed1821542c4e711f210312a/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f37363870782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67",
