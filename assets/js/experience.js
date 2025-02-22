@@ -90,8 +90,8 @@ const showCards = () => {
   let output = "";
   volunteershipcards.forEach(
     ({ title, cardImage, description, href }) => {
-      let buttonText = (title === "Battle Of Boards" || title === "Atomic Bingo") ? "Registration Over" : "Register Here";
-      let buttonClass = (title === "Battle Of Boards" || title === "Atomic Bingo") ? "disabled-button" : "volunteer-link";
+      let buttonText = (title === "Battle Of Boards" || title === "Atomic Bingo" || title === "Quiz Fusion") ? "Registration Over" : "Register Here";
+      let buttonClass = (title === "Battle Of Boards" || title === "Atomic Bingo" || title === "Quiz Fusion") ? "disabled-button" : "volunteer-link";
       let button = href 
                    ? `<a href="${href}" class="${buttonClass}" ${buttonClass === "disabled-button" ? 'style="pointer-events: none; color: grey;"' : ''} target="_blank" rel="noopener noreferrer">${buttonText}</a>`
                    : '';
