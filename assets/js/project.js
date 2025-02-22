@@ -107,7 +107,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Vraj Shah,<br> Socail Media Head",
+    title: "Vraj Shah,<br> Social Media Head",
     cardImage: "assets/images/project-page/vraj.jpg",
     description: "Built using Python.",
     tagimg:
@@ -116,7 +116,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Meet Patel,<br> PR Head",
+    title: "Meet Patel,<br> Marketing Head",
     cardImage: "assets/images/project-page/marketing.jpg",
     description: "Built using Python.",
     tagimg:
@@ -125,7 +125,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Harshvardhan Gohil,<br> SR Head",
+    title: "Harshvardhan Gohil,<br> Sophomore",
     cardImage: "assets/images/project-page/harshvardhan.jpg",
     description: "Built using Python.",
     tagimg:
