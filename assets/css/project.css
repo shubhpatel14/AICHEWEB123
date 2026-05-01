@@ -28,7 +28,7 @@ body{
   color:var(--text);
 }
 
-/* HERO */
+/* ================= HERO ================= */
 
 .projects_head{
   font-size:3rem;
@@ -46,7 +46,7 @@ body{
   color:#555;
 }
 
-/* TEAM SECTION */
+/* ================= CARDS ================= */
 
 .project-box{
   max-width:1400px;
@@ -61,8 +61,6 @@ body{
   width:100%;
 }
 
-/* reset old bootstrap */
-
 .column,
 .card,
 .skill-card{
@@ -73,8 +71,6 @@ body{
   box-shadow:none;
 }
 
-/* card */
-
 .card{
   cursor:pointer;
 }
@@ -84,6 +80,8 @@ body{
   height:420px;
   border-radius:22px;
   overflow:hidden;
+  background-size:cover !important;
+  background-position:center center !important;
   box-shadow:0 15px 35px var(--shadow1),0 8px 20px var(--shadow2);
   transition:.35s ease;
 }
@@ -93,19 +91,17 @@ body{
   box-shadow:0 24px 45px rgba(0,0,0,.18);
 }
 
-/* overlay */
-
 .card .data{
   position:absolute;
   bottom:0;
   left:0;
   width:100%;
   padding:22px;
-  background:linear-gradient(to top,rgba(0,0,0,.92),rgba(0,0,0,.12));
+  background:linear-gradient(to top,rgba(0,0,0,.88),rgba(0,0,0,.08));
 }
 
 .card .title{
-  font-size:1.3rem;
+  font-size:1.35rem;
   font-weight:600;
   line-height:1.35;
   margin:0;
@@ -116,8 +112,6 @@ body{
   text-decoration:none;
 }
 
-/* hide old junk */
-
 .menu-content,
 .header,
 .text,
@@ -125,25 +119,34 @@ body{
   display:none;
 }
 
-/* first card reveal after scroll */
+/* ================= FACE ALIGNMENT ================= */
 
-.page-content .card:first-child{
-  opacity:0;
-  transform:translateY(80px);
-  transition:.7s ease;
+/* 2 = Niyati */
+.page-content .card:nth-child(2) .wrapper{
+  background-position:center 18% !important;
 }
 
-body.scrolled .page-content .card:first-child{
-  opacity:1;
-  transform:translateY(0);
+/* 4 = Rutvi */
+.page-content .card:nth-child(4) .wrapper{
+  background-position:center 22% !important;
 }
 
-/* TABLET */
+/* 7 = Uday */
+.page-content .card:nth-child(7) .wrapper{
+  background-position:center 20% !important;
+}
+
+/* Add Pareg/Pareg Saxena later if inserted */
+.page-content .card:nth-child(10) .wrapper{
+  background-position:center 18% !important;
+}
+
+/* ================= TABLET ================= */
 
 @media(max-width:992px){
 
 .projects_head{
-  font-size:2.4rem;
+  font-size:2.5rem;
 }
 
 .card .wrapper{
@@ -151,61 +154,49 @@ body.scrolled .page-content .card:first-child{
 }
 
 .card .title{
-  font-size:1.15rem;
+  font-size:1.2rem;
 }
 }
 
-/* MOBILE */
+/* ================= MOBILE ================= */
 
 @media(max-width:768px){
 
-body{
-  background:#f5f5f5;
-}
-
 section{
   height:auto !important;
-  padding:10px 0 0 0 !important;
-  margin:0 !important;
+  padding:12px 0 0 0 !important;
 }
 
 .row{
   display:flex !important;
   flex-direction:column !important;
   align-items:center;
-  margin:0 !important;
 }
 
 .godown{
   padding:0 !important;
-  margin:0 !important;
   text-align:center;
 }
 
 .godown svg{
   width:72% !important;
-  max-width:230px;
+  max-width:240px;
   height:auto !important;
-  margin:auto;
-  display:block;
 }
 
 .dropdown{
   margin-top:8px !important;
-  padding:0 14px !important;
+  padding:0 16px !important;
 }
 
 .projects_head{
   font-size:2rem !important;
   text-align:center;
-  line-height:1.1;
 }
 
 .pre-heading{
-  font-size:.9rem !important;
+  font-size:.92rem !important;
   text-align:center;
-  line-height:1.45;
-  margin-top:8px !important;
 }
 
 .project-box{
@@ -218,48 +209,41 @@ section{
 }
 
 .card .wrapper{
-  height:330px !important;
+  height:340px !important;
   border-radius:18px;
 }
 
-.card .data{
-  padding:18px;
-}
-
 .card .title{
-  font-size:1.05rem !important;
+  font-size:1.08rem !important;
 }
 
-.container,
-.col-md-6,
-[class*="col-"]{
-  padding-left:0 !important;
-  padding-right:0 !important;
+/* mobile face crop */
+.page-content .card:nth-child(2) .wrapper{
+  background-position:center 15% !important;
+}
+
+.page-content .card:nth-child(4) .wrapper{
+  background-position:center 18% !important;
+}
+
+.page-content .card:nth-child(7) .wrapper{
+  background-position:center 16% !important;
 }
 }
 
-/* SMALL PHONE */
+/* ================= SMALL PHONE ================= */
 
 @media(max-width:480px){
-
-.godown svg{
-  width:68% !important;
-  max-width:210px;
-}
 
 .projects_head{
   font-size:1.8rem !important;
 }
 
-.pre-heading{
-  font-size:.82rem !important;
-}
-
 .card .wrapper{
-  height:300px !important;
+  height:310px !important;
 }
 
 .card .title{
-  font-size:.95rem !important;
+  font-size:1rem !important;
 }
 }
