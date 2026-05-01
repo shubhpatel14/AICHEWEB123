@@ -16,24 +16,19 @@ body.scrolled .page-content .card:first-child{
   opacity:1;
   transform:translateY(0);
 }
-/* Face alignment fixes */
+```:::
 
-/* 2 = Niyati */
-.page-content .card:nth-child(2) .wrapper{
-  background-position:center 18% !important;
-}
-
-/* 4 = Rutvi Patel */
-.page-content .card:nth-child(4) .wrapper{
-  background-position:center 22% !important;
-}
-
-/* 7 = Uday */
-.page-content .card:nth-child(7) .wrapper{
-  background-position:center 20% !important;
-}
-
-/* If Pareg/Pareg Saxena card added later, change number accordingly */
-.page-content .card:nth-child(10) .wrapper{
-  background-position:center 18% !important;
-}
+:::writing{variant="standard" id="48163"}
+```html
+<!-- Paste before </body> -->
+<script>
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 180) {
+    document.body.classList.add("scrolled");
+  } else {
+    document.body.classList.remove("scrolled");
+  }
+});
+</script>
+```:::
+````
