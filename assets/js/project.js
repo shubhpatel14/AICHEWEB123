@@ -11,42 +11,42 @@ const projects = [
   {
     title:"Parag Saxena,<br>Faculty Mentor",
     cardImage:"assets/images/project-page/paragsaxena.jpeg",
-    position:"center 15%"
+    position:"center 12%"
   },
   {
     title:"Niyati Raulji,<br>President",
     cardImage:"assets/images/project-page/niyati.jpg",
-    position:"center 20%"
+    position:"center 8%"
   },
   {
     title:"Sholk Panchal,<br>Vice President",
     cardImage:"assets/images/project-page/sholk.jpg",
-    position:"center 18%"
+    position:"center 10%"
   },
   {
     title:"Rutvi Patel,<br>Secretary",
     cardImage:"assets/images/project-page/rutvi.jpg",
-    position:"center 12%"
+    position:"center 30%"
   },
   {
     title:"Aryan Shah,<br>Joint Secretary",
     cardImage:"assets/images/project-page/aryan.jpg",
-    position:"center 10%"
+    position:"center 12%"
   },
   {
     title:"Ved Prajapati,<br>Treasurer",
     cardImage:"assets/images/project-page/ved.jpg",
-    position:"center 15%"
+    position:"center 16%"
   },
   {
     title:"Upadhay Uday,<br>Treasurer",
     cardImage:"assets/images/project-page/uday.jpg",
-    position:"center 15%"
+    position:"center 14%"
   },
   {
     title:"Meet Patel,<br>Joint Treasurer",
     cardImage:"assets/images/project-page/marketing.jpg",
-    position:"center 8%"
+    position:"center 10%"
   }
 ];
 
@@ -60,12 +60,12 @@ const showCards = () => {
            data-aos-duration="700">
 
         <div class="wrapper"
-        style="
-        background-image:url('${cardImage}');
-        background-size:cover;
-        background-repeat:no-repeat;
-        background-position:${position};
-        ">
+             style="
+             background-image:url('${cardImage}');
+             background-size:cover;
+             background-repeat:no-repeat;
+             background-position:${position};
+             ">
 
           <div class="data">
             <div class="content">
@@ -87,8 +87,7 @@ const showCards = () => {
 
 document.addEventListener("DOMContentLoaded", showCards);
 
-
-/* Reveal first card after scroll */
+/* first card reveal after scroll */
 window.addEventListener("scroll", function () {
   if (window.scrollY > 180) {
     document.body.classList.add("scrolled");
