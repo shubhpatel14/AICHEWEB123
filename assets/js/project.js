@@ -6,7 +6,7 @@ const projects = [
 
 {
 title:"Sanjukta Bose Goswami,<br>AIChE Advisor",
-cardImage:"assets/images/project-page/sbg.png",
+cardImage:"assets/images/project-page/sbg2.png",
 position:"center 8%"
 },
 {
@@ -35,19 +35,19 @@ position:"center 10%"
 
 {
 title:"Aryan Shah,<br>Joint Secretary",
-cardImage:"assets/images/project-page/aryan.jpg",
+cardImage:"assets/images/project-page/aryan2.jpg",
 position:"center 10%"
 },
 
 {
 title:"Ved Prajapati,<br>Treasurer",
-cardImage:"assets/images/project-page/ved.jpg",
+cardImage:"assets/images/project-page/ved2.jpg",
 position:"center 10%"
 },
 
 {
 title:"Upadhyay Uday,<br>Joint Treasurer",
-cardImage:"assets/images/project-page/uday.jpg",
+cardImage:"assets/images/project-page/uday2.jpg",
 position:"center 10%"
 },
 
