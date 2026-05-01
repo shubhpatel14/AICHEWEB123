@@ -9,6 +9,11 @@ title:"Sanjukta Bose Goswami,<br>AIChE Advisor",
 cardImage:"assets/images/project-page/sbg.png",
 position:"center 8%"
 },
+{
+title:"Parag Saxena,<br>Faculty Mentor",
+cardImage:"assets/images/project-page/paragsaxena.jpeg",
+position:"center 8%"
+},
 
 {
 title:"Niyati Raulji,<br>President",
