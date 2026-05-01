@@ -14,6 +14,14 @@ const projects = [
     Githublink: "",
   },
   {
+    title: "Parag Saxena,<br>Faculty Mentor",
+    cardImage: "assets/images/project-page/paragsaxena.jpeg",
+    description: "A quiz app built using basic react.",
+    tagimg: "https://cdn.iconscout.com/icon/free/png-512/react-1-282599.png",
+    Previewlink: "",
+    Githublink: "",
+  },
+  {
     title: "Niyati Raulji,<br>President",
     cardImage: "assets/images/project-page/niyati.jpg",
     description: "A chess engine for a popular game dev engine.",
