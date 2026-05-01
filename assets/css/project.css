@@ -1,15 +1,18 @@
+/* ==================================================
+FULL CLEAN CSS — FIXED MOBILE + FACE ALIGNMENT
+Replace your ENTIRE current CSS file with this
+================================================== */
+
 html[data-theme="light"]{
-  --bg-col:#fafafa;
-  --shadow1:rgba(0,0,0,.15);
-  --shadow2:rgba(0,0,0,.08);
+  --bg-col:#f5f5f5;
   --text:#191919;
+  --shadow:rgba(0,0,0,.14);
 }
 
 html[data-theme="dark"]{
   --bg-col:#141516;
-  --shadow1:rgba(255,255,255,.08);
-  --shadow2:rgba(255,255,255,.03);
   --text:#ffffff;
+  --shadow:rgba(255,255,255,.08);
 }
 
 *{
@@ -20,6 +23,7 @@ html[data-theme="dark"]{
 
 html,body{
   overflow-x:hidden;
+  width:100%;
 }
 
 body{
@@ -33,7 +37,7 @@ body{
 .projects_head{
   font-size:3rem;
   font-weight:700;
-  margin-bottom:10px;
+  text-align:center;
 }
 
 .my_projects{
@@ -41,9 +45,14 @@ body{
 }
 
 .pre-heading{
+  text-align:center;
   font-size:1rem;
-  line-height:1.6;
+  line-height:1.5;
+  margin-top:8px;
   color:#555;
+  max-width:700px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 /* ================= CARDS ================= */
@@ -51,7 +60,7 @@ body{
 .project-box{
   max-width:1400px;
   margin:auto;
-  padding:50px 20px;
+  padding:40px 20px;
 }
 
 .page-content{
@@ -65,15 +74,13 @@ body{
 .card,
 .skill-card{
   width:100%;
-  margin:0;
+  margin:0 !important;
   border:none;
   background:none;
   box-shadow:none;
 }
 
-.card{
-  cursor:pointer;
-}
+/* Card container */
 
 .card .wrapper{
   position:relative;
@@ -81,30 +88,31 @@ body{
   border-radius:22px;
   overflow:hidden;
   background-size:cover !important;
-  background-position:center center !important;
-  box-shadow:0 15px 35px var(--shadow1),0 8px 20px var(--shadow2);
+  background-repeat:no-repeat !important;
+  background-position:center top !important;
+  box-shadow:0 14px 35px var(--shadow);
   transition:.35s ease;
 }
 
 .card .wrapper:hover{
-  transform:translateY(-8px);
-  box-shadow:0 24px 45px rgba(0,0,0,.18);
+  transform:translateY(-6px);
 }
+
+/* overlay */
 
 .card .data{
   position:absolute;
-  bottom:0;
   left:0;
+  bottom:0;
   width:100%;
-  padding:22px;
+  padding:20px;
   background:linear-gradient(to top,rgba(0,0,0,.88),rgba(0,0,0,.08));
 }
 
 .card .title{
-  font-size:1.35rem;
+  font-size:1.25rem;
   font-weight:600;
   line-height:1.35;
-  margin:0;
 }
 
 .card .title a{
@@ -119,26 +127,31 @@ body{
   display:none;
 }
 
-/* ================= FACE ALIGNMENT ================= */
+/* ================= FACE POSITIONS DESKTOP ================= */
 
-/* 2 = Niyati */
+/* 1 Sanjukta */
+.page-content .card:nth-child(1) .wrapper{
+  background-position:center 8% !important;
+}
+
+/* 2 Niyati */
 .page-content .card:nth-child(2) .wrapper{
-  background-position:center 18% !important;
+  background-position:center 12% !important;
 }
 
-/* 4 = Rutvi */
+/* 3 Sholk */
+.page-content .card:nth-child(3) .wrapper{
+  background-position:center 12% !important;
+}
+
+/* 4 Rutvi */
 .page-content .card:nth-child(4) .wrapper{
-  background-position:center 22% !important;
+  background-position:center 12% !important;
 }
 
-/* 7 = Uday */
+/* 7 Uday */
 .page-content .card:nth-child(7) .wrapper{
-  background-position:center 20% !important;
-}
-
-/* Add Pareg/Pareg Saxena later if inserted */
-.page-content .card:nth-child(10) .wrapper{
-  background-position:center 18% !important;
+  background-position:center 12% !important;
 }
 
 /* ================= TABLET ================= */
@@ -146,15 +159,11 @@ body{
 @media(max-width:992px){
 
 .projects_head{
-  font-size:2.5rem;
+  font-size:2.4rem;
 }
 
 .card .wrapper{
   height:390px;
-}
-
-.card .title{
-  font-size:1.2rem;
 }
 }
 
@@ -164,7 +173,7 @@ body{
 
 section{
   height:auto !important;
-  padding:12px 0 0 0 !important;
+  padding:10px 12px !important;
 }
 
 .row{
@@ -179,28 +188,26 @@ section{
 }
 
 .godown svg{
-  width:72% !important;
+  width:75% !important;
   max-width:240px;
   height:auto !important;
 }
 
 .dropdown{
-  margin-top:8px !important;
-  padding:0 16px !important;
+  margin-top:10px !important;
+  padding:0 12px !important;
 }
 
 .projects_head{
   font-size:2rem !important;
-  text-align:center;
 }
 
 .pre-heading{
   font-size:.92rem !important;
-  text-align:center;
 }
 
 .project-box{
-  padding:25px 12px;
+  padding:22px 12px;
 }
 
 .page-content{
@@ -214,24 +221,33 @@ section{
 }
 
 .card .title{
-  font-size:1.08rem !important;
+  font-size:1.05rem;
 }
 
-/* mobile face crop */
+/* MOBILE FACE POSITIONS */
+
+.page-content .card:nth-child(1) .wrapper{
+  background-position:center 5% !important;
+}
+
 .page-content .card:nth-child(2) .wrapper{
-  background-position:center 15% !important;
+  background-position:center 8% !important;
+}
+
+.page-content .card:nth-child(3) .wrapper{
+  background-position:center 8% !important;
 }
 
 .page-content .card:nth-child(4) .wrapper{
-  background-position:center 18% !important;
+  background-position:center 8% !important;
 }
 
 .page-content .card:nth-child(7) .wrapper{
-  background-position:center 16% !important;
+  background-position:center 8% !important;
 }
 }
 
-/* ================= SMALL PHONE ================= */
+/* ================= SMALL PHONES ================= */
 
 @media(max-width:480px){
 
@@ -239,11 +255,15 @@ section{
   font-size:1.8rem !important;
 }
 
+.pre-heading{
+  font-size:.82rem !important;
+}
+
 .card .wrapper{
   height:310px !important;
 }
 
 .card .title{
-  font-size:1rem !important;
+  font-size:.98rem;
 }
 }
