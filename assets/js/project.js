@@ -49,7 +49,7 @@ position:"center 10%"
 {
 title:"Meet Patel,<br>Marketing Head",
 cardImage:"assets/images/project-page/marketing.jpg",
-position:"center 2%"
+position:"center 10%"
 }
 
 ];
