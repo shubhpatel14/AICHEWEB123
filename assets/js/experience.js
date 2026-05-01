@@ -63,25 +63,50 @@ AOS.init();
 
 const volunteership = document.querySelector(".volunteership");
 const volunteershipcards = [
+
   {
     title: "Battle Of Boards",
     cardImage: "assets/images/experience-page/bob.png",
     description:
-      "Decorate The Boards, Show Your Creativity <br><br>",
+      "Decorate The Boards, Show Your Creativity<br><br>",
+    href:"https://www.youtube.com/"
+  },
+
+  {
+    title: "Helping Hands",
+    cardImage: "assets/images/experience-page/helpinghand.png",
+    description:
+      "A small gesture of gratitude, creating a big impact through kindness<br>",
+    href:"https://www.youtube.com/"
+  },
+
+  {
+    title: "Kala Fusion",
+    cardImage: "assets/images/experience-page/kalafusion.png",
+    description:
+      "Kala Fusion: A vibrant blend of art, culture, and boundless creativity.<br>",
+    href:"https://www.youtube.com/"
+  },
+  
+  {
+    title: "ChemX TreasureHunt",
+    cardImage: "assets/images/experience-page/chemxtreasurehunt.png",
+    description:
+      "A thrilling adventure of clues, chemistry, and teamwork<br>",
     href:"https://www.youtube.com/"
   },
   {
-    title: "Atomic Bingo",
-    cardImage: "assets/images/experience-page/Atomicbingo.png",
+    title: "Surprise O Box",
+    cardImage: "assets/images/experience-page/supriseobox.png",
     description:
-    "Chemistry, oh what a thrill, Fill your Bingo boxes with skills",
+    "Unboxing surprises, excitement, and endless fun.<br><br>",
     href:"https://www.youtube.com/"
   },
   {
-    title: "Quiz Fusion",
-    cardImage: "assets/images/experience-page/quizfusion.png",
+    title: "Excel Workshop",
+    cardImage: "assets/images/experience-page/excel.png",
     description:
-    "Calling the bright minds, The quiz challenge awaits<br><br>",
+    "Empowering chemical engineers with practical Excel skills for data analysis<br>",
     href:"https://docs.google.com/forms/d/e/1FAIpQLScrD3Q1aiRxiU5aQOx95mDME0Ojvuu7ghmLOJYwhxsXIb8GkQ/viewform?usp=sf_link"
   },
 ];
@@ -90,8 +115,8 @@ const showCards = () => {
   let output = "";
   volunteershipcards.forEach(
     ({ title, cardImage, description, href }) => {
-      let buttonText = (title === "Battle Of Boards" || title === "Atomic Bingo" || title === "Quiz Fusion") ? "Registration Over" : "Register Here";
-      let buttonClass = (title === "Battle Of Boards" || title === "Atomic Bingo" || title === "Quiz Fusion") ? "disabled-button" : "volunteer-link";
+      let buttonText = (title === "Battle Of Boards" || title === "Atomic Bingo" || title === "Quiz Fusion" || title === "Helping Hands"|| title === "Kala Fusion"|| title === "ChemX TreasureHunt"||  title === "Surprise O Box" || title === "Excel Workshop") ? "Registration Over" : "Register Here";
+      let buttonClass = (title === "Battle Of Boards" || title === "Atomic Bingo" || title === "Quiz Fusion" || title === "Helping Hands"|| title === "Kala Fusion"|| title === "ChemX TreasureHunt"|| title === "Surprise O Box" || title === "Excel Workshop") ? "disabled-button" : "volunteer-link";
       let button = href 
                    ? `<a href="${href}" class="${buttonClass}" ${buttonClass === "disabled-button" ? 'style="pointer-events: none; color: grey;"' : ''} target="_blank" rel="noopener noreferrer">${buttonText}</a>`
                    : '';
