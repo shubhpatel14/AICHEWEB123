@@ -1,4 +1,287 @@
-````css
+
+html[data-theme="light"]{
+  --bg-col:#fafafa;
+  --shadow1:rgba(0,0,0,.15);
+  --shadow2:rgba(0,0,0,.08);
+  --text:#191919;
+}
+
+html[data-theme="dark"]{
+  --bg-col:#141516;
+  --shadow1:rgba(255,255,255,.08);
+  --shadow2:rgba(255,255,255,.03);
+  --text:#ffffff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  overflow-x:hidden;
+}
+
+body{
+  font-family:'Poppins',sans-serif;
+  background:var(--bg-col);
+  color:var(--text);
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.projects_head{
+  font-size:3rem;
+  font-weight:700;
+  margin-bottom:10px;
+}
+
+.my_projects{
+  color:#7d3cff;
+}
+
+.pre-heading{
+  font-size:1rem;
+  line-height:1.6;
+  color:#555;
+}
+
+/* =========================
+   TEAM CARD SECTION
+========================= */
+
+.project-box{
+  max-width:1400px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+.page-content{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:28px;
+  width:100%;
+}
+
+/* reset old bootstrap styles */
+
+.column,
+.card,
+.skill-card{
+  width:100%;
+  margin:0;
+  border:none;
+  background:none;
+  box-shadow:none;
+}
+
+/* card */
+
+.card{
+  cursor:pointer;
+}
+
+.card .wrapper{
+  position:relative;
+  height:420px;
+  border-radius:22px;
+  overflow:hidden;
+  background-size:cover !important;
+  background-position:center !important;
+  box-shadow:0 15px 35px var(--shadow1),0 8px 20px var(--shadow2);
+  transition:.35s ease;
+}
+
+.card .wrapper:hover{
+  transform:translateY(-8px);
+  box-shadow:0 24px 45px rgba(0,0,0,.18);
+}
+
+/* bottom overlay */
+
+.card .data{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  padding:22px;
+  background:linear-gradient(to top,rgba(0,0,0,.88),rgba(0,0,0,.08));
+  transform:translateY(0);
+}
+
+.card .content{
+  position:relative;
+  z-index:2;
+}
+
+.card .title{
+  font-size:1.35rem;
+  font-weight:600;
+  line-height:1.35;
+  margin:0;
+}
+
+.card .title a{
+  color:#fff;
+  text-decoration:none;
+}
+
+.card .title a:hover{
+  color:#fff;
+}
+
+/* hide old unused elements */
+
+.menu-content,
+.header,
+.text,
+.social-icon{
+  display:none;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media(max-width:992px){
+
+.projects_head{
+  font-size:2.5rem;
+}
+
+.card .wrapper{
+  height:390px;
+}
+
+.card .title{
+  font-size:1.2rem;
+}
+}
+
+/* =========================
+   MOBILE PERFECT VERSION
+========================= */
+
+@media(max-width:768px){
+
+body{
+  background:#f5f5f5;
+}
+
+/* top section */
+
+section{
+  height:auto !important;
+  padding:12px 0 0 0 !important;
+  margin:0 !important;
+}
+
+.row{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center;
+  margin:0 !important;
+}
+
+.godown{
+  padding:0 !important;
+  margin:0 !important;
+  text-align:center;
+}
+
+.godown svg{
+  width:72% !important;
+  max-width:240px;
+  height:auto !important;
+  display:block;
+  margin:auto;
+}
+
+.dropdown{
+  margin-top:8px !important;
+  padding:0 16px !important;
+  position:relative !important;
+}
+
+.projects_head{
+  font-size:2rem !important;
+  text-align:center;
+  line-height:1.1;
+}
+
+.pre-heading{
+  font-size:.92rem !important;
+  text-align:center;
+  line-height:1.45;
+  margin-top:8px !important;
+}
+
+/* cards */
+
+.project-box{
+  padding:25px 12px;
+  margin-top:10px !important;
+}
+
+.page-content{
+  grid-template-columns:1fr !important;
+  gap:18px !important;
+}
+
+.card .wrapper{
+  height:340px !important;
+  border-radius:18px;
+}
+
+.card .data{
+  padding:18px;
+}
+
+.card .title{
+  font-size:1.08rem !important;
+}
+
+/* remove mobile side gaps */
+
+.container,
+.col-md-6,
+[class*="col-"]{
+  padding-left:0 !important;
+  padding-right:0 !important;
+}
+}
+
+/* =========================
+   SMALL PHONE
+========================= */
+
+@media(max-width:480px){
+
+.godown svg{
+  width:68% !important;
+  max-width:210px;
+}
+
+.projects_head{
+  font-size:1.8rem !important;
+}
+
+.pre-heading{
+  font-size:.85rem !important;
+}
+
+.card .wrapper{
+  height:310px !important;
+}
+
+.card .title{
+  font-size:1rem !important;
+}
+}
+
 /* ======================================
 HIDE FIRST CARD UNTIL USER SCROLLS
 Paste in CSS file end
@@ -16,19 +299,18 @@ body.scrolled .page-content .card:first-child{
   opacity:1;
   transform:translateY(0);
 }
-```:::
+/* Hide first card initially */
+.page-content .card:first-child{
+  opacity:0;
+  transform:translateY(80px);
+  transition:0.7s ease;
+}
 
-:::writing{variant="standard" id="48163"}
-```html
-<!-- Paste before </body> -->
-<script>
-window.addEventListener("scroll", function () {
-  if (window.scrollY > 180) {
-    document.body.classList.add("scrolled");
-  } else {
-    document.body.classList.remove("scrolled");
-  }
-});
-</script>
-```:::
-````
+/* Show after scroll */
+body.scrolled .page-content .card:first-child{
+  opacity:1;
+  transform:translateY(0);
+}
+
+
+
